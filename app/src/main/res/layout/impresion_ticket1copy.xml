@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout 
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+	    
+       <ImageView 
+		        android:id="@+id/ivLogoA"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/logo_1"
+		        android:contentDescription="@string/a"
+		        android:layout_centerHorizontal="true"/>  
+        
+        <TextView 
+            android:id="@+id/tvMuni"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mnpo"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@+id/ivLogoA"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>  
+        
+        <TextView 
+            android:id="@+id/tvJefatura"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMuni"
+            android:text="@string/jefatura"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvTransito"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/transito"
+		        android:layout_below="@+id/tvJefatura"
+		        android:textSize="25sp"
+            	android:textStyle="bold"
+            	android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvFecha"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/fecha"
+		        android:layout_below="@+id/tvTransito"
+		        android:textSize="16sp"
+		        android:textStyle="bold"
+		        android:layout_alignParentRight="true"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvFolio"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/folio"
+		        android:layout_below="@+id/tvTransito"
+		        android:textSize="16sp"
+		        android:textStyle="bold"
+		        android:layout_alignParentLeft="true"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvFecha1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/fecha"
+		        android:layout_below="@+id/tvFecha"
+		        android:textSize="22sp"
+		        android:layout_alignParentRight="true"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvFolio1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/folio"
+		        android:layout_below="@+id/tvFecha"
+		        android:textSize="25sp"
+		        android:layout_alignParentLeft="true"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvPlaca"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/placas"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvFolio1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvPlaca1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/placas"
+			        android:textSize="25sp"
+			        android:layout_below="@+id/tvPlaca"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		       <!--  <TextView 
+			        android:id="@+id/tvVigencia"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/vigencia"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvPlaca1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvVigencia1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/vigencia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvVigencia"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>  -->
+		    	
+		        <TextView 
+			        android:id="@+id/tvProcedencia"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/procedencia"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvFolio1"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvProcedencia1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/procedencia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvPlaca"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvMarca"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/marca"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+					android:layout_below="@+id/tvPlaca1"
+					android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvMarca1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/marca"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvMarca"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvTipo"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvPlaca1"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvTipo1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvMarca"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvMod"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/modelo"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvTipo1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        
+		        <TextView 
+			        android:id="@+id/tvMod1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/modelo"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvMod"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvColor"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/color"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvTipo1"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvColor1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/color"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvMod"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvSerie"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/serie"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvColor1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvLinea"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/linea"
+			        android:textSize="16sp"
+			        android:layout_alignParentRight="true"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvColor1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        
+		        <TextView 
+			        android:id="@+id/tvSerie1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/serie"
+			        android:textSize="25sp"
+			        android:layout_below="@+id/tvSerie"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        
+		        <TextView 
+			        android:id="@+id/tvLinea1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/linea"
+			        android:layout_alignParentRight="true"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvLinea"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		     <TextView 
+			    android:id="@+id/tvDatoCond"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/datos_conductor"
+		        android:gravity="center"
+		        android:textSize="25sp"
+		        android:textStyle="bold"
+		        android:layout_below="@+id/tvSerie1"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombre"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvDatoCond"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombre1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="25sp"
+			        android:layout_below="@+id/tvNombre"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilio"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvNombre1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilio1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvDomicilio"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvColonia"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvDomicilio1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		         <TextView 
+			        android:id="@+id/tvColonia1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvColonia"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <!--  <TextView 
+			        android:id="@+id/tvCiudad"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvColonia1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudad1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvCiudad"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/> -->
+		    	
+		        <TextView 
+			        android:id="@+id/tvLicencia"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/licencia"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvColonia1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvLicencia1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/licencia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvLicencia"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		       <TextView 
+			        android:id="@+id/tvTip"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo_licencia"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvColonia1"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvTip1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo_licencia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvLicencia"
+			        android:layout_alignParentRight="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		       <!-- <TextView 
+			    android:id="@+id/tvDatoPro"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/datos_propi"
+		        android:gravity="center"
+		        android:textSize="17sp"
+		        android:textStyle="bold"
+		        android:layout_below="@+id/tvTip1"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombrePro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvDatoPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombrePro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvNombrePro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		       <TextView 
+			        android:id="@+id/tvDomicilioPro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvNombrePro1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilioPro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvDomicilioPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvColoniaPro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvDomicilioPro1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvColoniaPro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvColoniaPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudadPro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvColoniaPro1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudadPro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvCiudadPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/> -->
+			        
+			    <TextView 
+				    android:id="@+id/tvDatoInf"
+				    android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/datos_infra"
+			        android:gravity="center"
+			        android:textSize="25sp"
+			        android:textStyle="bold"
+			        android:layout_below="@+id/tvTip1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/> 
+		    	
+		        <TextView 
+			        android:id="@+id/tvLugar"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lugar"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvDatoInf"
+			        android:textStyle="bold"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvLugar1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lugar"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvLugar"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <!-- <TextView 
+			        android:id="@+id/tvHora"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hr"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvLugar1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvHora1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hr"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvHora"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>  -->
+		    	
+		        <TextView 
+			        android:id="@+id/tvConcepto"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvLugar1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvConcepto1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="20sp"
+			        android:layout_below="@+id/tvConcepto"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		      <TextView 
+			        android:id="@+id/tvConcepto2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvConcepto1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvConcepto12"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="20sp"
+			        android:layout_below="@+id/tvConcepto2"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvConcepto3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvConcepto12"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvConcepto13"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="20sp"
+			        android:layout_below="@+id/tvConcepto3"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		         <TextView 
+			        android:id="@+id/tvConcepto4"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvConcepto13"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvConcepto14"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="20sp"
+			        android:layout_below="@+id/tvConcepto4"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		       <TextView 
+			        android:id="@+id/tvConcepto5"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvConcepto14"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvConcepto15"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="20sp"
+			        android:layout_below="@+id/tvConcepto5"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>		        
+		        <TextView 
+			        android:id="@+id/tvArticulos"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/articulo"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvConcepto15"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvArticulos1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/articulo"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvArticulos"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        
+		    	
+		        <TextView 
+			        android:id="@+id/tvObservaciones"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/observaciones"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvArticulos1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvObservaciones1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/observaciones"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvObservaciones"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvClave"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/clave"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvObservaciones1"
+			        android:layout_alignParentLeft="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvClave1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/clave"
+			        android:textSize="25sp"
+			        android:layout_below="@+id/tvClave"
+			        android:layout_alignParentLeft="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvElemento"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/elemento"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:layout_below="@+id/tvClave1"
+			        android:layout_alignParentLeft="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvElemento1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/elemento"
+			        android:textSize="20sp"
+			        android:layout_below="@+id/tvElemento"
+			        android:layout_alignParentLeft="true"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:gravity="center"/> 
+		        
+		        
+		    
+		</RelativeLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pgm.transito.Menu"
+    android:gravity="center_vertical" >
+    
+    <TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+
+    <ScrollView android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        
+        <RelativeLayout 
+            android:layout_height="wrap_content"
+        	android:layout_width="wrap_content">
+        
+	        <TextView android:id="@+id/tvMsg"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+				android:textSize="22sp"
+				android:textStyle="bold|italic"/>
+	        
+		    <Button android:id="@+id/btnMulta"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:text="@string/multa"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@id/tvMsg"
+		        android:layout_marginTop="5dp"/>
+		    
+		    <Button android:id="@+id/btnDescargaDatos"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnMulta"
+		        android:text="@string/descarga_datos"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnDescargaDatosCopy"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnDescargaDatos"
+		        android:text="@string/descarga_datos_c"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin"
+		        android:visibility="gone" />
+		    
+		     <Button android:id="@+id/btnDescargaFoto"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnDescargaDatosCopy"
+		        android:text="@string/fot"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin"
+		        android:visibility="gone" />
+		    
+		    <Button android:id="@+id/btnActualizarBD"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnDescargaFoto"
+		        android:text="@string/actualizar"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnActualizarPlacas"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnActualizarBD"
+		        android:text="@string/actualizar_placas"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnDescargaApp"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnActualizarPlacas"
+		        android:text="@string/d_app"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnActualizarAgente"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnDescargaApp"
+		        android:text="@string/actualizar_agentes"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnBusqueda"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnActualizarAgente"
+		        android:text="@string/busqueda"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnImprimirTicketLinea"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnBusqueda"
+		        android:text="@string/imprimir_ticket_linea"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnSincronizar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnImprimirTicketLinea"
+		        android:text="@string/sincronizar_i"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnIP"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnSincronizar"
+		        android:text="@string/ip_a"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnIPFTP"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnIP"
+		        android:text="@string/ip_f"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnConfigTab"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnIPFTP"
+		        android:text="@string/config_tab"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		    <Button android:id="@+id/btnCorregirTableta"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/btnConfigTab"
+		        android:text="@string/corregir_tableta"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="@dimen/activity_vertical_margin" />
+		    
+		</RelativeLayout>
+	    
+	</ScrollView>
+    
+</RelativeLayout>

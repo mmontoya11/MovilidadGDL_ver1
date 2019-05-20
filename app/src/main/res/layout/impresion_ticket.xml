@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_gravity="center">
+
+
+		<ImageView
+			android:id="@+id/ivLogoA"
+			android:layout_width="match_parent"
+			android:layout_height="236dp"
+			android:contentDescription="@string/a"
+			android:src="@drawable/log_movilidad" />
+		    
+		    <TextView 
+		        android:id="@+id/tvMuni"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/mnpo"
+		        android:layout_below="@+id/ivLogoA"
+		        android:textSize="18sp"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvJefatura"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/jefatura"
+		        android:layout_below="@+id/tvMuni"
+		        android:textSize="15sp"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvTransito"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/transito"
+		        android:layout_below="@+id/tvJefatura"
+		        android:textSize="15sp"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvFecha"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/fecha"
+		        android:layout_below="@+id/tvTransito"
+		        android:textSize="15sp"
+		        android:layout_alignParentRight="true"/>
+		    
+		    <TextView 
+		        android:id="@+id/tvFecha1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/fecha"
+		        android:layout_below="@+id/tvFecha"
+		        android:textSize="15sp"
+		        android:layout_alignParentRight="true"/>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll1"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/tvFecha1">
+		    	
+		        <TextView 
+			        android:id="@+id/tvPlaca"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/placas"
+			        android:textSize="15sp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll2"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll1">
+		    	
+		        <TextView 
+			        android:id="@+id/tvPlaca1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/placas"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvVigencia1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/vigencia"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll3"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/ll2">
+		    	
+		        <TextView 
+			        android:id="@+id/tvProcedencia"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/procedencia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvMarca"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/marca"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll4"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll3">
+		    	
+		        <TextView 
+			        android:id="@+id/tvProcedencia1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/procedencia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvMarca1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/marca"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		     <LinearLayout 
+		        android:id="@+id/ll5"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll4">
+		    	
+		        <TextView 
+			        android:id="@+id/tvTipo"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvMod"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/modelo"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		     <LinearLayout 
+		        android:id="@+id/ll6"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll5">
+		    	
+		        <TextView 
+			        android:id="@+id/tvTipo1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvMod1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/modelo"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		     <LinearLayout 
+		        android:id="@+id/ll7"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll6">
+		    	
+		        <TextView 
+			        android:id="@+id/tvColor"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/color"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvSerie"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/serie"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		     <LinearLayout 
+		        android:id="@+id/ll8"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll7">
+		    	
+		        <TextView 
+			        android:id="@+id/tvColor1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/color"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvSerie1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/serie"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		     <TextView 
+			    android:id="@+id/tvDatoCond"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/datos_conductor"
+		        android:gravity="center"
+		        android:textSize="17sp"
+		        android:textStyle="bold"
+		        android:layout_below="@+id/ll8"/>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll9"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/tvDatoCond">
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombre"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="15sp"/>
+		        
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll10"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll9">
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombre1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="15sp"/>
+		        
+		        
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/lldom"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/ll10">
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilio"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/lldom1"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/lldom">
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilio1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"/>
+		        
+		        
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll11"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/lldom1">
+		    	
+		        <TextView 
+			        android:id="@+id/tvColonia"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudad"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll12"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll11">
+		    	
+		        <TextView 
+			        android:id="@+id/tvColonia1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudad1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll13"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll12">
+		    	
+		        <TextView 
+			        android:id="@+id/tvLicencia"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/licencia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvTip"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo_licencia"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll14"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll13">
+		    	
+		        <TextView 
+			        android:id="@+id/tvLicencia1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/licencia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvTip1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo_licencia"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <TextView 
+			    android:id="@+id/tvDatoPro"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/datos_propi"
+		        android:gravity="center"
+		        android:textSize="17sp"
+		        android:textStyle="bold"
+		        android:layout_below="@+id/ll14"/>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll15"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/tvDatoPro">
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombrePro"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="15sp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/llpro"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll15">
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombrePro1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="15sp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/lldomi"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/llpro">
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilioPro"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/lldomi1"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_marginBottom="5dp"
+		    	android:layout_below="@+id/lldomi">
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilioPro1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll17"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/lldomi1">
+		    	
+		        <TextView 
+			        android:id="@+id/tvColoniaPro"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudadPro"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll18"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll17">
+		    	
+		        <TextView 
+			        android:id="@+id/tvColoniaPro1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudadPro1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll19"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll18">
+		    	
+		        <TextView 
+			        android:id="@+id/tvLugar"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lugar"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvHora"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hr"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll20"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll19">
+		    	
+		        <TextView 
+			        android:id="@+id/tvLugar1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lugar"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvHora1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hr"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll21"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll20">
+		    	
+		        <TextView 
+			        android:id="@+id/tvConcepto"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvGarantia"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/garantia"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll22"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="horizontal"
+		    	android:layout_below="@+id/ll21">
+		    	
+		        <TextView 
+			        android:id="@+id/tvConcepto1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvGarantia1"
+			        android:layout_width="130dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/garantia"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:id="@+id/ll23"
+		        android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+			   	android:orientation="vertical"
+		    	android:layout_below="@+id/ll22">
+		    	
+		        <TextView 
+			        android:id="@+id/tvObservaciones"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/observaciones"
+			        android:textSize="15sp"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvObservaciones1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/observaciones"
+			        android:textSize="15sp"
+			        android:layout_marginLeft="10dp"/>
+		        
+		    </LinearLayout>
+		    
+		</RelativeLayout>
+    
+
+</ScrollView>

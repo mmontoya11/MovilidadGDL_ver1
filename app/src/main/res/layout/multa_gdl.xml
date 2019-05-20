@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    
+    <RelativeLayout 
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp">
+        
+	    <ImageView
+	        android:id="@+id/ivEsc"
+	        android:layout_width="200dp"
+	        android:layout_height="60dp"
+	        android:layout_above="@+id/tvFolio"
+	        android:contentDescription="@string/a"
+	        android:src="@drawable/log_movilidad"
+	        android:visibility="visible" />
+	    
+	    <ImageView 
+	        android:id="@+id/ivLogo"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:src="@drawable/log_g"
+	        android:layout_alignParentRight="true"
+	        android:contentDescription="@string/a"
+	        android:visibility="visible"/>
+	    
+	    <TextView android:id="@+id/tvFolio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/folio"
+	        android:layout_below="@id/ivLogo"
+	        android:textSize="18sp"
+	        style="@style/titleR"
+	        android:textStyle="bold"/>
+	    
+	    <TextView android:id="@+id/tvFolio1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/folio"
+	        android:layout_below="@id/ivLogo"
+	        android:textSize="20sp"
+	        style="@style/titleR"
+	        android:layout_toRightOf="@id/tvFolio"
+	        android:layout_marginLeft="5dp"
+	        android:textStyle="bold"/>
+	    
+	    <TextView 
+	        android:id="@+id/tvCedula"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cedula"
+	        android:textSize="18sp"
+	        style="@style/titleR"
+	        android:layout_below="@id/tvFolio"/>
+	    
+	    <TextView 
+	        android:id="@+id/tvArea"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/area"
+	        android:textSize="18sp"
+	        style="@style/titleR"
+	        android:layout_below="@id/tvCedula"
+	        android:layout_centerInParent="true"/>
+	    
+	    
+	    <TextView 
+	        android:id="@+id/tvDom"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dom"
+	        android:textSize="18sp"
+	        android:layout_below="@id/tvArea"
+	        android:textStyle="bold"
+	        android:layout_centerInParent="true"/>
+	    
+	    <TextView
+	        android:id="@+id/tvMulta" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dom"
+	        android:textSize="22sp"
+	        style="@style/title"
+	        android:layout_below="@id/tvDom"
+	        android:layout_centerInParent="true"/>
+	    
+	    
+	    
+	    <TableLayout 
+	        android:id="@+id/tl1"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:stretchColumns="1"
+		    android:layout_below="@+id/tvMulta"
+		    android:visibility="visible"
+		    android:layout_marginRight="8dp">
+		    
+	        <TableRow 
+	            android:id="@+id/tableRow1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+	            <!-- <TextView 
+	                android:layout_column="1"
+	                android:text="@string/zona"
+	                android:padding="5dp"
+	                android:background="@drawable/cell"
+	                android:textSize="12sp"
+	                style="@style/SubtitleR"/> -->
+	            
+	            <TextView
+	                android:layout_column="1"
+	                android:text="@string/motivo"
+	                android:padding="5dp"
+	                android:layout_span="2"
+	                android:background="@drawable/cell"
+	                android:textSize="15sp"
+	                android:gravity="center"
+	                style="@style/SubtitleR"/>
+	            
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow12"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+	            <!-- <TextView 
+	                android:layout_column="1"
+	                android:text="@string/zona"
+	                android:padding="5dp"
+	                android:background="@drawable/cell"
+	                android:textSize="12sp"
+	                style="@style/SubtitleR"/> -->
+	            
+	            <TextView 
+	                android:id="@+id/tvMotivo1"
+	                android:layout_column="1"
+	                android:text="@string/motivo"
+	                android:layout_span="2"
+	                android:background="@drawable/cell"
+	                android:padding="5dp"
+	                android:textSize="15sp"
+	                style="@style/SubtitleR"/>
+	            
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow2"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+	            <!-- <TextView 
+	                android:layout_column="1"
+	                android:text="@string/zona"
+	                android:padding="5dp"
+	                android:background="@drawable/cell"
+	                android:textSize="12sp"
+	                style="@style/SubtitleR"/> -->
+	            
+	            <TextView 
+	                android:layout_column="1"
+	                android:text="@string/clave"
+	                android:padding="5dp"
+	                android:background="@drawable/cell"
+	                android:textSize="15sp"
+	                android:gravity="center"
+	                style="@style/SubtitleR"/>
+	            
+	            <TextView 
+	                android:id="@+id/tvClave1"
+	                android:layout_column="1"
+	                android:text="@string/clave"
+	                android:padding="5dp"
+	                android:background="@drawable/cell"
+	                android:textSize="15sp"
+	                android:gravity="center"
+	                style="@style/SubtitleR"/>
+	            
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow3"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+	            
+	            <!-- <TextView 
+	                android:layout_column="1"
+	                android:text="@string/zona"
+	                android:padding="5dp"
+	                android:background="@drawable/cell"
+	                android:textSize="12sp"
+	                style="@style/SubtitleR"/> -->
+	            
+	             <TextView 
+	                android:layout_column="1"
+	                android:padding="5dp"
+	                android:text="@string/sancion"
+	                android:background="@drawable/cell"
+	                android:textSize="15sp"
+	                android:gravity="center"
+	                style="@style/SubtitleR"/>
+	             
+	              <TextView 
+	                 android:id="@+id/tvSan1"
+	                android:layout_column="1"
+	                android:padding="5dp"
+	                android:text="@string/sancion"
+	                android:background="@drawable/cell"
+	                android:textSize="15sp"
+	                android:gravity="center"
+	                style="@style/SubtitleR"/>
+	            
+	        </TableRow>
+		    
+	    </TableLayout>
+	    
+	    
+	    
+	    <TableLayout 
+	        android:id="@+id/tl2"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:stretchColumns="1"
+		    android:layout_below="@+id/tl1"
+		    android:layout_marginTop="10dp">
+	        
+	        <TableRow
+	            android:id="@+id/tableRow5"
+	            android:layout_width="match_parent"
+	            android:layout_height="10dp"
+	            android:layout_gravity="bottom"
+	            android:visibility="visible" >
+	            
+	            <TextView 
+	                android:layout_column="1"
+	                android:text="@string/nombre_a"
+	                style="@style/titleR1"
+	                android:padding="5dp"
+	                android:textSize="18sp"/>
+	            
+	            <TextView 
+	                android:layout_column="1"
+	                android:text="@string/firma"
+	                style="@style/titleR1"
+	                android:padding="5dp"
+	                android:textSize="18sp"/> 
+	            
+	        </TableRow>
+		    
+	    </TableLayout>
+	    
+	    <TableLayout 
+	        android:id="@+id/tl21"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:stretchColumns="1"
+		    android:layout_below="@+id/tl2"
+		    android:layout_marginTop="50dp">
+		    
+	        <TableRow 
+	            android:id="@+id/tableRow41"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:visibility="visible">
+	            
+	            <TextView 
+	                android:id="@+id/tvServidor"
+	                android:layout_column="1"
+	                android:padding="5dp"
+	                android:textSize="18sp"/>
+	            
+	            <TextView 
+	                android:layout_column="1"
+	                android:padding="5dp"
+	                android:textSize="18sp"/>
+	            
+	        </TableRow>
+	        
+		    
+	    </TableLayout>
+	    
+	    
+	    <TextView 
+	        android:id="@+id/tvNota"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tl21"
+	        android:text="@string/despues"
+	        android:layout_marginTop="7dp"
+	        android:textSize="17sp"
+	        android:textStyle="bold"
+	        android:visibility="visible"/>
+	    
+	   <TextView 
+	        android:id="@+id/tvNota1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tvNota"
+	        android:text="@string/descuento"
+	        android:layout_marginTop="7dp"
+	        android:textStyle="bold"
+	        android:textSize="22sp"
+	        android:visibility="gone"/>
+	    
+	    <TextView 
+	        android:id="@+id/tvNota2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tvNota1"
+	        android:text="@string/sanciones"
+	        android:layout_marginTop="5dp"
+	        android:visibility="gone"
+	        android:textSize="17sp"/>
+	    
+	     <LinearLayout 
+	        android:id="@+id/llFund"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_below="@id/tvNota2">
+	    
+		    <TextView 
+		        android:id="@+id/tvNota3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/constitucion"
+		        android:layout_marginTop="5dp"
+		        android:textStyle="bold"
+		        android:textSize="13sp"
+		        android:visibility="gone"/>
+		    <TextView 
+		        android:id="@+id/tvNota4"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/constitucion1"
+		        android:layout_marginTop="5dp"
+		        android:visibility="gone"/>
+		    <TextView 
+		        android:id="@+id/tvNota5"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/consti_jal"
+		        android:textStyle="bold"
+		        android:layout_marginTop="5dp"
+		        android:visibility="gone"/>
+		    <TextView 
+		        android:id="@+id/tvNota6"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/consti_jal1"
+		        android:layout_marginTop="5dp"
+		        android:visibility="gone"/>
+		    <TextView 
+		        android:id="@+id/tvNota7"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lpa"
+		        android:layout_marginTop="5dp"
+		        android:textStyle="bold"
+		        android:visibility="gone"/>
+		    <TextView 
+		        android:id="@+id/tvNota8"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lpa1"
+		        android:layout_marginTop="5dp"
+		        android:visibility="gone"/>
+		    <TextView 
+		        android:id="@+id/tvNota9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lmt"
+		        android:layout_marginTop="5dp"
+		        android:textStyle="bold"
+		        android:visibility="gone"/>
+		    <TextView 
+		        android:id="@+id/tvNota10"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/lmt1"
+		        android:layout_marginTop="5dp"
+		        android:visibility="gone"/>
+	    
+	    </LinearLayout>
+	    
+	    <TableLayout 
+	        android:id="@+id/tl3"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:stretchColumns="1"
+		    android:layout_below="@+id/llFund"
+		    android:layout_marginTop="10dp">
+		    
+	        <TableRow 
+	            android:id="@+id/tableRow11"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content">
+		    
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/lugar3"
+		            android:textSize="13sp"
+		            android:textStyle="bold"
+		            android:layout_span="2"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:text="@string/pag"
+		            android:visibility="gone"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow121"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+		    
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/dir"
+		            android:textSize="13sp"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:textStyle="bold"
+		            android:text="@string/dir_"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:textStyle="bold"
+		            android:text="@string/cep"
+		            android:visibility="gone"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow13"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+		    
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/dir1"
+		            android:textSize="13sp"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:textStyle="bold"
+		            android:text="@string/dir11"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:text="@string/estacionamiento"
+		            android:visibility="gone"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow14"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+		    
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/dir2"
+		            android:textSize="13sp"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:textStyle="bold"
+		            android:text="@string/dir21"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:text="@string/cla"
+		            android:visibility="gone"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow51"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+		    
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/dir3"
+		            android:textSize="13sp"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:textStyle="bold"
+		            android:text="@string/dir31"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:text="@string/cep1"
+		            android:visibility="gone"/>
+	        
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:id="@+id/tableRow6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+		    
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/dir4"
+		            android:textSize="13sp"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:textStyle="bold"
+		            android:text="@string/dir41"
+		            android:visibility="gone"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" 
+		            android:text="@string/unic1"
+		            android:visibility="gone"/>
+	        
+	        </TableRow>
+	        
+	    </TableLayout>
+	    
+	</RelativeLayout>
+    
+
+</ScrollView>

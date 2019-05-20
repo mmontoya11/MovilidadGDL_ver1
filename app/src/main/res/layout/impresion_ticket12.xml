@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout 
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+        
+        <TextView 
+			        android:id="@+id/tvTip"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo_licencia"
+			        android:textSize="16sp"
+		        	android:textStyle="bold"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvTip1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tipo_licencia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvTip"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+	    
+        
+		    
+		<TextView 
+			    android:id="@+id/tvDatoPro"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/datos_propi"
+		        android:gravity="center"
+		        android:textSize="17sp"
+		        android:textStyle="bold"
+		        android:layout_below="@id/tvTip1"
+		        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombrePro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvDatoPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvNombrePro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/nombre"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvNombrePro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		       <TextView 
+			        android:id="@+id/tvDomicilioPro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvNombrePro1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvDomicilioPro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/domicilio"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvDomicilioPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvColoniaPro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvDomicilioPro1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvColoniaPro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/colonia"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvColoniaPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudadPro"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvColoniaPro1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvCiudadPro1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/ciudad"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvCiudadPro"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+			        
+			    <TextView 
+				    android:id="@+id/tvDatoInf"
+				    android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/datos_infra"
+			        android:gravity="center"
+			        android:textSize="17sp"
+			        android:textStyle="bold"
+			        android:layout_below="@+id/tvCiudadPro1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvLugar"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lugar"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvDatoInf"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvLugar1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lugar"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvLugar"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvHora"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hr"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvLugar1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvHora1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/hr"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvHora"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvConcepto"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvHora1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvConcepto1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/concepto"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvConcepto"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		       <!--  <TextView 
+			        android:id="@+id/tvGarantia"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/garantia"
+			        android:gravity="center"
+			        android:textSize="17sp"
+			        android:textStyle="bold"
+			        android:layout_below="@+id/tvConcepto1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvTC"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tc"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvGarantia"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvTC1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/tc"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvTC"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvPlac"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/placas"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvTC1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvPlac1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/placas"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvPlac"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvLic"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lic"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvPlac1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvLic1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/lic"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvLic"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvVEH"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/veh"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvLic1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvVEH1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/veh"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvVEH"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvInvent"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/invent"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvVEH1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvInvent1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/invent"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvInvent"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>  -->
+		        
+		        <TextView 
+			        android:id="@+id/tvArticulos"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/articulo"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvConcepto1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvArticulos1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/articulo"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvArticulos"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    	
+		        <TextView 
+			        android:id="@+id/tvObservaciones"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/observaciones"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvArticulos1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvObservaciones1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/observaciones"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvObservaciones"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvClave"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/clave"
+			        android:textSize="16sp"
+		        android:textStyle="bold"
+			        android:layout_below="@+id/tvObservaciones1"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		        
+		        <TextView 
+			        android:id="@+id/tvClave1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/clave"
+			        android:textSize="15sp"
+			        android:layout_below="@+id/tvClave"
+			        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		    
+		</RelativeLayout>
+    
+
+</ScrollView>
